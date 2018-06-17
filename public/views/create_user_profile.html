@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Create User</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">Logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                    <a href="/create-user">Create User</a>
+                </li>
+                <li>
+                    <a href="/create-challenge">Create Challenge</a>
+                </li>
+                <li>
+                    <a href="/challenges">View Challenges</a>
+                </li>
+                <li>
+                    <a href="/user-profile">User Profile</a>
+                </li>
+                <li>
+                    <a href="/api/users">User Json</a>
+                </li>
+            </ul>
+            </ul>
+        </div>
+    </nav>
+    <H1>Create User Profile</H1>
+
+    <div class="container">
+        <div class='container'>
+            <div class="row">
+                <form id='createUser'>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Name" id="name" type="text">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Bio" id="bio" type="text">
+                            <label for="bio">Bio</label>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Custom Scriot -->
+    <script src="../js/create_user_profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Create User</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">Logo</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                    <a href="/create-user">Create User</a>
+                </li>
+                <li>
+                    <a href="/create-challenge">Create Challenge</a>
+                </li>
+                <li>
+                    <a href="/challenges">View Challenges</a>
+                </li>
+                <li>
+                    <a href="/user-profile">User Profile</a>
+                </li>
+                <li>
+                    <a href="/api/users">User Json</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <H1>Create Challenge</H1>
+
+    <div class="container">
+        <div class="row">
+            <form id="challengeForm" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Challenge Name" id="challengeName" type="text">
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Location" id="location" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Description" id="description" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="file-field input-field col s3">
+                        <div class="btn">
+                            <span>File</span>
+                            <input id="file-upload" type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                    <div class="input-field col s2">
+                        <input placeholder="Difficulty(1-5)" id="points" type="text">
+                    </div>
+                </div>
+
+                <button class="btn waves-effect waves-light" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Custom Script -->
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT1ayGoO6v1KkLGaOwZ2b6zjZUySw_7vU&libraries=places" type="text/javascript"></script>
+    <!-- Custom Javascript -->
+    <script src="../js/create_challenge.js"></script>
+
+</body>
+
+</html>
